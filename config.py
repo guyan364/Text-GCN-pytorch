@@ -28,11 +28,11 @@ dataset:
  presplit suffix means training and test are predetermined in [dataset]_labels.txt
  small suffix means a very small dataset used for debugging
 """
-# dataset = 'twitter_asian_prejudice'
+dataset = 'twitter_asian_prejudice'
 # dataset = 'twitter_asian_prejudice_sentiment'
 # dataset = 'r8_presplit'
 # dataset = 'ag_presplit'
-dataset = 'twitter_asian_prejudice_small'
+# dataset = 'twitter_asian_prejudice_small'
 
 if 'twitter_asian_prejudice' in dataset:
     if 'sentiment' in dataset:

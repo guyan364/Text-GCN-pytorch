@@ -17,7 +17,8 @@ def train(train_data, val_data, saver):
     moving_avg = MovingAverage(FLAGS.validation_window_size, FLAGS.validation_metric != 'loss')
     pyg_graph = train_data.get_pyg_graph(FLAGS.device)
     optimizer = torch.optim.Adam(model.parameters(), lr=FLAGS.lr, )
-
+    print(FLAGS.num_epochs)
+    exit(0)
     for epoch in range(FLAGS.num_epochs):
         t = time.time()
         model.train()
